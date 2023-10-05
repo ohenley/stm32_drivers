@@ -47,11 +47,15 @@
 
 -- with STM32.Device;
 
-private with STM32_SVD.SAI;
+with STM32_SVD.SAI;
 
 package STM32.SAI is
 
-   type SAI_Controller is limited private;
+   subtype SAI_Controller is STM32_SVD.SAI.SAI_Peripheral;
+   subtype SAI_Port is STM32_SVD.SAI.SAI_Peripheral;
+
+   SAI_1 : SAI_Port renames STM32_SVD.SAI.SAI1_Periph;
+   SAI_2 : SAI_Port renames STM32_SVD.SAI.SAI2_Periph;
 
    type SAI_Block is (Block_A, Block_B);
 
@@ -332,9 +336,5 @@ package STM32.SAI is
       Slot_Size        : SAI_Slot_Size;
       Number_Of_Slots  : Slots_Number;
       Enabled_Slots    : SAI_Slots);
-
-private
-
-  type SAI_Controller is new STM32_SVD.SAI.SAI_Peripheral;
 
 end STM32.SAI;
