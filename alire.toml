@@ -24,6 +24,7 @@ spi = { type = "Enum", values = ["v1", ], default = "v1" }
 i2s = { type = "Enum", values = ["v1", ], default = "v1" }
 timers = { type = "Enum", values = ["v1", ], default = "v1" }
 rtc = { type = "Enum", values = ["v1", ], default = "v1" }
+rng = { type = "Enum", values = ["v1", ], default = "v1" }
 gpio = { type = "Enum", values = ["v1", ], default = "v1" }
 rcc = { type = "Enum", values = ["v1", ], default = "v1" }
 syscfg = { type = "Enum", values = ["v1", ], default = "v1" }
