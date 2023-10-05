@@ -30,6 +30,7 @@ timers = { type = "Enum", values = ["v1", ], default = "v1" }
 rtc = { type = "Enum", values = ["v1", ], default = "v1" }
 rng = { type = "Enum", values = ["v1", ], default = "v1" }
 sai = { type = "Enum", values = ["v1", ], default = "v1" }
+sd = { type = "Enum", values = ["v1", ], default = "v1" }
 gpio = { type = "Enum", values = ["v1", ], default = "v1" }
 rcc = { type = "Enum", values = ["v1", ], default = "v1" }
 syscfg = { type = "Enum", values = ["v1", ], default = "v1" }

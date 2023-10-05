@@ -64,6 +64,10 @@ project Stm32_Drivers is
       when "v1" =>
          Src_Dirs := Src_Dirs & ("src/sai/v1/");
    end case;
+   case stm32_drivers_config.SD is
+      when "v1" =>
+         Src_Dirs := Src_Dirs & ("src/sd/v1/");
+   end case;
    case stm32_drivers_config.RTC is
       when "v1" =>
          Src_Dirs := Src_Dirs & ("src/rtc/v1/");
