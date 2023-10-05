@@ -8,13 +8,49 @@ project Stm32_Drivers is
    for Library_Version use Project'Library_Name & ".so." & Stm32_Drivers_Config.Crate_Version;
 
    Src_Dirs := ();
+   case stm32_drivers_config.ADC is
+      when "v1" =>
+         Src_Dirs := Src_Dirs & ("src/adc/v1/");
+   end case;
+   case stm32_drivers_config.DAC is
+      when "v1" =>
+         Src_Dirs := Src_Dirs & ("src/dac/v1/");
+   end case;
+   case stm32_drivers_config.DMA is
+      when "v1" =>
+         Src_Dirs := Src_Dirs & ("src/dma/v1/");
+   end case;
+   case stm32_drivers_config.DMA_INTERRUPTS is
+      when "v1" =>
+         Src_Dirs := Src_Dirs & ("src/dma_interrupts/v1/");
+   end case;
    case stm32_drivers_config.GPIO is
       when "v1" =>
          Src_Dirs := Src_Dirs & ("src/gpio/v1/");
    end case;
+   case stm32_drivers_config.POWER_CONTROL is
+      when "v1" =>
+         Src_Dirs := Src_Dirs & ("src/power_control/v1/");
+   end case;
+   case stm32_drivers_config.I2S is
+      when "v1" =>
+         Src_Dirs := Src_Dirs & ("src/i2s/v1/");
+   end case;
    case stm32_drivers_config.RCC is
       when "v1" =>
          Src_Dirs := Src_Dirs & ("src/rcc/v1/");
+   end case;
+   case stm32_drivers_config.RTC is
+      when "v1" =>
+         Src_Dirs := Src_Dirs & ("src/rtc/v1/");
+   end case;
+   case stm32_drivers_config.SPI is
+      when "v1" =>
+         Src_Dirs := Src_Dirs & ("src/spi/v1/");
+   end case;
+   case stm32_drivers_config.TIMERS is
+      when "v1" =>
+         Src_Dirs := Src_Dirs & ("src/timers/v1/");
    end case;
    case stm32_drivers_config.SYSCFG is
       when "v1" =>

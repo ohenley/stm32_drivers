@@ -9,8 +9,21 @@ maintainers-logins = ["ohenley"]
 [[depends-on]]
 hal = "~0.3.0"
 stm32_svd = "0.1.0-dev"
+cortex_m = "0.5.0"
+
+[configuration.values]
+cortex_m.core = "m7f"
 
 [configuration.variables]
+adc = { type = "Enum", values = ["v1", ], default = "v1" }
+dac = { type = "Enum", values = ["v1", ], default = "v1" }
+dma = { type = "Enum", values = ["v1", ], default = "v1" }
+dma_interrupts = { type = "Enum", values = ["v1", ], default = "v1" }
+power_control = { type = "Enum", values = ["v1", ], default = "v1" }
+spi = { type = "Enum", values = ["v1", ], default = "v1" }
+i2s = { type = "Enum", values = ["v1", ], default = "v1" }
+timers = { type = "Enum", values = ["v1", ], default = "v1" }
+rtc = { type = "Enum", values = ["v1", ], default = "v1" }
 gpio = { type = "Enum", values = ["v1", ], default = "v1" }
 rcc = { type = "Enum", values = ["v1", ], default = "v1" }
 syscfg = { type = "Enum", values = ["v1", ], default = "v1" }
