@@ -1,0 +1,20 @@
+name = "stm32_drivers"
+description = "Shiny new project"
+version = "0.1.0-dev"
+
+authors = ["Olivier Henley"]
+maintainers = ["Olivier Henley <olivier.henley@gmail.com>"]
+maintainers-logins = ["ohenley"]
+
+[[depends-on]]
+hal = "~0.3.0"
+stm32_svd = "0.1.0-dev"
+
+[configuration.variables]
+gpio = { type = "Enum", values = ["v1", ], default = "v1" }
+rcc = { type = "Enum", values = ["v1", ], default = "v1" }
+syscfg = { type = "Enum", values = ["v1", ], default = "v1" }
+exti = { type = "Enum", values = ["v1", ], default = "v1" }
+
+
+
