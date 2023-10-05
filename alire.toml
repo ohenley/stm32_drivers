@@ -19,12 +19,17 @@ adc = { type = "Enum", values = ["v1", ], default = "v1" }
 dac = { type = "Enum", values = ["v1", ], default = "v1" }
 dma = { type = "Enum", values = ["v1", ], default = "v1" }
 dma_interrupts = { type = "Enum", values = ["v1", ], default = "v1" }
+dma2d = { type = "Enum", values = ["v1", ], default = "v1" }
+fmc = { type = "Enum", values = ["v1", ], default = "v1" }
+ltdc = { type = "Enum", values = ["v1", ], default = "v1" }
 power_control = { type = "Enum", values = ["v1", ], default = "v1" }
 spi = { type = "Enum", values = ["v1", ], default = "v1" }
+i2c = { type = "Enum", values = ["v1", ], default = "v1" }
 i2s = { type = "Enum", values = ["v1", ], default = "v1" }
 timers = { type = "Enum", values = ["v1", ], default = "v1" }
 rtc = { type = "Enum", values = ["v1", ], default = "v1" }
 rng = { type = "Enum", values = ["v1", ], default = "v1" }
+sai = { type = "Enum", values = ["v1", ], default = "v1" }
 gpio = { type = "Enum", values = ["v1", ], default = "v1" }
 rcc = { type = "Enum", values = ["v1", ], default = "v1" }
 syscfg = { type = "Enum", values = ["v1", ], default = "v1" }

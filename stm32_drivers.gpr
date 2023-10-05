@@ -24,13 +24,29 @@ project Stm32_Drivers is
       when "v1" =>
          Src_Dirs := Src_Dirs & ("src/dma_interrupts/v1/");
    end case;
+   case stm32_drivers_config.DMA2D is
+      when "v1" =>
+         Src_Dirs := Src_Dirs & ("src/dma2d/v1/");
+   end case;
+   case stm32_drivers_config.FMC is
+      when "v1" =>
+         Src_Dirs := Src_Dirs & ("src/fmc/v1/");
+   end case;
    case stm32_drivers_config.GPIO is
       when "v1" =>
          Src_Dirs := Src_Dirs & ("src/gpio/v1/");
    end case;
+   case stm32_drivers_config.LTDC is
+      when "v1" =>
+         Src_Dirs := Src_Dirs & ("src/ltdc/v1/");
+   end case;
    case stm32_drivers_config.POWER_CONTROL is
       when "v1" =>
          Src_Dirs := Src_Dirs & ("src/power_control/v1/");
+   end case;
+   case stm32_drivers_config.I2C is
+      when "v1" =>
+         Src_Dirs := Src_Dirs & ("src/i2c/v1/");
    end case;
    case stm32_drivers_config.I2S is
       when "v1" =>
@@ -43,6 +59,10 @@ project Stm32_Drivers is
    case stm32_drivers_config.RNG is
       when "v1" =>
          Src_Dirs := Src_Dirs & ("src/rng/v1/");
+   end case;
+   case stm32_drivers_config.SAI is
+      when "v1" =>
+         Src_Dirs := Src_Dirs & ("src/sai/v1/");
    end case;
    case stm32_drivers_config.RTC is
       when "v1" =>
